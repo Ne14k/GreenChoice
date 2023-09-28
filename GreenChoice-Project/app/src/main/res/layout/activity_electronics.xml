@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/topAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Electronics"
+                app:navigationIcon="@drawable/menu"
+                android:background="@color/green" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/topAppBarLayout"
+            android:layout_above="@id/myButton"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis ac diam finibus semper. Fusce ac nisl ut tortor consectetur fringilla. Integer quis justo vel elit feugiat finibus. Nulla facilisi. Suspendisse potenti. Cras interdum, justo non cursus posuere, massa odio vulputate magna, id congue ex libero at purus. Phasellus ullamcorper nunc nec arcu congue fringilla. Sed nec lacus ut libero malesuada vehicula. Vivamus facilisis suscipit nunc nec fermentum. Vestibulum et mattis odio, et hendrerit felis. Sed suscipit libero eget eros ullamcorper, non volutpat turpis dapibus. Ut a ex euismod, laoreet ante nec, dictum libero. Donec rhoncus massa a libero euismod, in gravida quam dictum. Sed eu orci vel libero tempus convallis. Curabitur viverra laoreet arcu, vel commodo libero fringilla sed.
+
+Pellentesque efficitur quam ut ligula vehicula tincidunt. Integer non vestibulum est, nec varius libero. Maecenas sed justo vitae enim ultricies egestas. Fusce in odio arcu. Curabitur tincidunt arcu a massa feugiat dictum. Quisque malesuada velit sit amet luctus feugiat. Fusce finibus lacus sit amet laoreet vulputate. Nam ac augue sed nisi vestibulum pellentesque eget sit amet odio. Vivamus nec mi nec sem vulputate congue.
+
+Integer quis risus malesuada, ultricies mauris eget, viverra dolor. Morbi id volutpat est. Sed vitae dui nec mi pharetra fringilla. Sed ac malesuada justo. Aliquam vel ultricies quam. Sed interdum sapien ac purus suscipit dictum. Sed ut erat ac quam tincidunt facilisis vel in velit. Quisque ut sapien in quam tempus bibendum sit amet non ligula. Fusce nec ex a nisl dictum dictum non id tortor. Nullam eget ullamcorper lectus. Sed eu ex at ligula volutpat ullamcorper. Nulla facilisi. Sed nec fringilla orci.
+
+Aenean vel bibendum erat. Nullam luctus justo vitae scelerisque aliquet. Duis ac dolor in nisl elementum fermentum. Quisque sollicitudin malesuada libero, vel congue odio viverra eu. Nunc sed accumsan ligula. Nullam ut nulla id augue laoreet efficitur vel nec quam. Integer eu urna volutpat, euismod velit in, auctor libero. Etiam pharetra erat elit, sit amet auctor urna posuere a. Proin quis ex enim. Vestibulum accumsan rhoncus velit nec euismod. Quisque gravida eleifend dictum. Proin posuere, libero vel fringilla consequat, odio metus hendrerit lectus, sit amet ullamcorper ante ipsum vel orci. Curabitur vel lorem nec nisi ultricies aliquam. Suspendisse potenti.
+
+Cras eu pharetra lectus. Integer fermentum felis at ex facilisis, id fermentum nisi feugiat. Suspendisse in vehicula dolor. Fusce tristique auctor dolor, in efficitur quam elementum ut. Nulla bibendum enim sed purus egestas, nec bibendum arcu ullamcorper. Aliquam et feugiat velit. Fusce eu felis sit amet justo blandit accumsan a vel libero. Donec eu libero bibendum, luctus tellus a, auctor risus. Suspendisse potenti. Sed consequat urna eget mauris consectetur, eu luctus ipsum pellentesque. Maecenas gravida, dui at accumsan hendrerit, elit enim mattis est, a placerat libero velit eget massa. Vivamus non odio dolor. Nunc malesuada sapien vel congue mattis. Sed non justo non ex auctor elementum vel et arcu.
+" />
+
+                <Button
+                    android:id="@+id/myButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Click Me" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/myButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Click Me" />
+
+    </RelativeLayout>
+
+    <!-- Navigation drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/my_navigation_items" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

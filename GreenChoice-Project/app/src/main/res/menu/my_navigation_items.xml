@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        ></item>
+
+    <item
+        android:id="@+id/nav_electronics"
+        android:icon="@drawable/electronics"
+        android:title="Electronics"
+        ></item>
+
+
+    <item
+        android:id="@+id/nav_apparel"
+        android:icon="@drawable/apparel"
+        android:title="Apparel"
+        ></item>
+
+    <item
+        android:id="@+id/nav_foodandbev"
+        android:icon="@drawable/foodandbev"
+        android:title="Food and Beverage"
+        ></item>
+
+    <item
+        android:id="@+id/nav_gardenandtools"
+        android:icon="@drawable/gardenandtools"
+        android:title="Garden and Tools"
+        ></item>
+
+    <item
+        android:id="@+id/nav_healthandbeauty"
+        android:icon="@drawable/healthandbeauty"
+        android:title="Health and Beauty"
+        ></item>
+
+    <item
+        android:id="@+id/nav_homeandpet"
+        android:icon="@drawable/homeandpet"
+        android:title="Home and Pet"
+        ></item>
+
+
+    <item
+        android:id="@+id/nav_school"
+        android:icon="@drawable/school"
+        android:title="School"
+        ></item>
+
+    <item
+        android:id="@+id/nav_aboutus"
+        android:icon="@drawable/aboutus"
+        android:title="About Us"
+        ></item>
+
+</menu>
