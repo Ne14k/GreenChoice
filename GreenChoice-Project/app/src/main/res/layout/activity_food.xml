@@ -20,7 +20,7 @@
                 android:id="@+id/topAppBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="Food"
+                app:title="Food and Beverage"
                 app:navigationIcon="@drawable/menu"
                 android:background="@color/green" />
 
@@ -94,4 +94,3 @@ Cras eu pharetra lectus. Integer fermentum felis at ex facilisis, id fermentum n
         app:menu="@menu/my_navigation_items" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
-
