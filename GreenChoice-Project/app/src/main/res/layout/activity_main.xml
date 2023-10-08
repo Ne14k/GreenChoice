@@ -2,14 +2,17 @@
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!-- Main content -->
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F1F1EA">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/topAppBarLayout"
@@ -27,64 +30,400 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_below="@id/topAppBarLayout"
-            android:layout_above="@id/myButton"
-            android:fillViewport="true">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topAppBarLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fillViewport="true"
+            android:background="#F1F1EA">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="#F1F1EA">
 
-                <TextView
-                    android:id="@+id/textview"
+                <!-- Bamboo Pencil Sharpener -->
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac turpis ac diam finibus semper. Fusce ac nisl ut tortor consectetur fringilla. Integer quis justo vel elit feugiat finibus. Nulla facilisi. Suspendisse potenti. Cras interdum, justo non cursus posuere, massa odio vulputate magna, id congue ex libero at purus. Phasellus ullamcorper nunc nec arcu congue fringilla. Sed nec lacus ut libero malesuada vehicula. Vivamus facilisis suscipit nunc nec fermentum. Vestibulum et mattis odio, et hendrerit felis. Sed suscipit libero eget eros ullamcorper, non volutpat turpis dapibus. Ut a ex euismod, laoreet ante nec, dictum libero. Donec rhoncus massa a libero euismod, in gravida quam dictum. Sed eu orci vel libero tempus convallis. Curabitur viverra laoreet arcu, vel commodo libero fringilla sed.
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-Pellentesque efficitur quam ut ligula vehicula tincidunt. Integer non vestibulum est, nec varius libero. Maecenas sed justo vitae enim ultricies egestas. Fusce in odio arcu. Curabitur tincidunt arcu a massa feugiat dictum. Quisque malesuada velit sit amet luctus feugiat. Fusce finibus lacus sit amet laoreet vulputate. Nam ac augue sed nisi vestibulum pellentesque eget sit amet odio. Vivamus nec mi nec sem vulputate congue.
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="15dp">
 
-Integer quis risus malesuada, ultricies mauris eget, viverra dolor. Morbi id volutpat est. Sed vitae dui nec mi pharetra fringilla. Sed ac malesuada justo. Aliquam vel ultricies quam. Sed interdum sapien ac purus suscipit dictum. Sed ut erat ac quam tincidunt facilisis vel in velit. Quisque ut sapien in quam tempus bibendum sit amet non ligula. Fusce nec ex a nisl dictum dictum non id tortor. Nullam eget ullamcorper lectus. Sed eu ex at ligula volutpat ullamcorper. Nulla facilisi. Sed nec fringilla orci.
+                        <ImageView
+                            android:id="@+id/bamboo_pencil_sharpener_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="250dp"
+                            android:src="@drawable/image_f2b0d1d5_0b4f_48f7_8acd_dd572855d4c9_1024x1024"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
 
-Aenean vel bibendum erat. Nullam luctus justo vitae scelerisque aliquet. Duis ac dolor in nisl elementum fermentum. Quisque sollicitudin malesuada libero, vel congue odio viverra eu. Nunc sed accumsan ligula. Nullam ut nulla id augue laoreet efficitur vel nec quam. Integer eu urna volutpat, euismod velit in, auctor libero. Etiam pharetra erat elit, sit amet auctor urna posuere a. Proin quis ex enim. Vestibulum accumsan rhoncus velit nec euismod. Quisque gravida eleifend dictum. Proin posuere, libero vel fringilla consequat, odio metus hendrerit lectus, sit amet ullamcorper ante ipsum vel orci. Curabitur vel lorem nec nisi ultricies aliquam. Suspendisse potenti.
+                        <TextView
+                            android:id="@+id/bamboo_pencil_sharpener_title"
+                            style="@style/TextAppearance.MaterialComponents.Headline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Bamboo Pencil Sharpener"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_image"
+                            tools:ignore="DuplicateIds" />
 
-Cras eu pharetra lectus. Integer fermentum felis at ex facilisis, id fermentum nisi feugiat. Suspendisse in vehicula dolor. Fusce tristique auctor dolor, in efficitur quam elementum ut. Nulla bibendum enim sed purus egestas, nec bibendum arcu ullamcorper. Aliquam et feugiat velit. Fusce eu felis sit amet justo blandit accumsan a vel libero. Donec eu libero bibendum, luctus tellus a, auctor risus. Suspendisse potenti. Sed consequat urna eget mauris consectetur, eu luctus ipsum pellentesque. Maecenas gravida, dui at accumsan hendrerit, elit enim mattis est, a placerat libero velit eget massa. Vivamus non odio dolor. Nunc malesuada sapien vel congue mattis. Sed non justo non ex auctor elementum vel et arcu.
-" />
+                        <TextView
+                            android:id="@+id/bamboo_pencil_sharpener_subheading1"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Onyx + Green"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_title" />
 
-                <Button
-                    android:id="@+id/myButton3"
-                    android:layout_width="wrap_content"
+                        <TextView
+                            android:id="@+id/bamboo_pencil_sharpener_subheading2"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="School"
+                            android:gravity = "right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_title" />
+
+                        <TextView
+                            android:id="@+id/bamboo_pencil_sharpener_subheading3"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="$12 CAD"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_subheading2" />
+
+                        <TextView
+                            android:id="@+id/bamboo_pencil_sharpener_body"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Onyx + Green's Bamboo Pencil Sharpener is an eco-friendly sharpener made from sustainable bamboo materials."
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_subheading3" />
+
+                        <Button
+                            android:id="@+id/bamboo_pencil_sharpener_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Link"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_pencil_sharpener_body" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Bamboo Toothbrush -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:text="Click Me" />
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/bamboo_toothbrush_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="266dp"
+                            android:src="@drawable/bio_handle_1024x818"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/bamboo_toothbrush_title"
+                            style="@style/TextAppearance.MaterialComponents.Headline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Bamboo Toothbrush"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_image"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/bamboo_toothbrush_subhead1"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Brush with Bamboo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_title" />
+
+                        <TextView
+                            android:id="@+id/bamboo_toothbrush_subhead2"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Health &amp; Beauty"
+                            android:gravity = "right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_title" />
+
+                        <TextView
+                            android:id="@+id/bamboo_toothbrush_subhead3"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="$10 - $30 CAD"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_subhead2" />
+
+                        <TextView
+                            android:id="@+id/bamboo_toothbrush_body"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Brush with Bamboo provides sustainable toothbrushes made from bamboo handles and plant-based bristles, reducing plastic waste and promoting eco-friendly oral care."
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_subhead3" />
+
+                        <Button
+                            android:id="@+id/bamboo_toothbrush_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Link"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bamboo_toothbrush_body" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Cashmere Apparel -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/biodegradable_gloves_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="340dp"
+                            android:src="@drawable/biodegradable_gloves"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/biodegradable_gloves_title"
+                            style="@style/TextAppearance.MaterialComponents.Headline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Biodegradable Gloves"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_image"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/biodegradable_gloves_subhead1"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Watson Gloves"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_title" />
+
+                        <TextView
+                            android:id="@+id/biodegradable_gloves_subhead2"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Garden &amp; Tools"
+                            android:gravity = "right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_title" />
+
+                        <TextView
+                            android:id="@+id/biodegradable_gloves_subhead3"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="$10 CAD"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_subhead2" />
+
+                        <TextView
+                            android:id="@+id/biodegradable_gloves_body"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="15gg landfill biodegradable ZeroWaste™ nylon seamless knit degrades in 5 years in anaerobic landfill conditions."
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_subhead3" />
+
+                        <Button
+                            android:id="@+id/biodegradable_gloves_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Link"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/biodegradable_gloves_body" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Cashmere Apparel -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/cashmere_apparel_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="380dp"
+                            android:src="@drawable/cashmere_apparel"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/cashmere_apparel_title"
+                            style="@style/TextAppearance.MaterialComponents.Headline4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Cashmere Apparel"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_image"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/cashmere_apparel_subhead1"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Quince"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_title" />
+
+                        <TextView
+                            android:id="@+id/cashmere_apparel_subhead2"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Apparel"
+                            android:gravity = "right"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_title" />
+
+                        <TextView
+                            android:id="@+id/cashmere_apparel_subhead3"
+                            style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="~$80 CAD"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_subhead2" />
+
+                        <TextView
+                            android:id="@+id/cashmere_apparel_body"
+                            style="@style/TextAppearance.MaterialComponents.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Quince's 100% Cashmere Apparel for men offers luxurious comfort and timeless style with its premium cashmere fabric and classic design."
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_subhead3" />
+
+                        <Button
+                            android:id="@+id/cashmere_apparel_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Link"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cashmere_apparel_body" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-
         </ScrollView>
-
-        <Button
-            android:id="@+id/myButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Click Me" />
-
     </RelativeLayout>
 
-    <!-- Navigation drawer -->
+    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

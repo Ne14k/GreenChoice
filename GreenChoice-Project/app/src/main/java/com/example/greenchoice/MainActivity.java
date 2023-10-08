@@ -17,8 +17,10 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    Button mybutton;
-
+    Button bamboo_pencil_sharpener_button;
+    Button bamboo_toothbrush_button;
+    Button biodegradable_gloves_button;
+    Button cashmere_apparel_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
         MaterialToolbar toolbar = findViewById(R.id.topAppBar);
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_view);
-        mybutton = findViewById(R.id.myButton); // Initialize the button
+        bamboo_pencil_sharpener_button = findViewById(R.id.bamboo_pencil_sharpener_button); // Initialize the button
+        bamboo_toothbrush_button = findViewById(R.id.bamboo_toothbrush_button);
+        biodegradable_gloves_button = findViewById(R.id.biodegradable_gloves_button);
+        cashmere_apparel_button = findViewById(R.id.cashmere_apparel_button);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,10 +41,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mybutton.setOnClickListener(new View.OnClickListener() {
+        bamboo_pencil_sharpener_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launchURI("https://www.amazon.ca/");
+                launchURI("https://www.amazon.ca/Onyx-Blue-Double-Sharpener-Bamboo/dp/B00PX8NBMS");
+            }
+        });
+        bamboo_toothbrush_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchURI("https://www.brushwithbamboo.com/shop/");
+            }
+        });
+        biodegradable_gloves_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchURI("https://www.homedepot.ca/product/watson-gloves-jade-landfill-biodegradable-zerowaste-seamless-knit-women-s-garden-glove-large/1001627751");
+            }
+        });
+        cashmere_apparel_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchURI("https://www.quince.com/men/the_59_cashmere");
             }
         });
 
