@@ -14,10 +14,10 @@
 
 "GreenChoice" is an Android app, developed in Java, that offers sustainable product alternatives. It suggests eco-friendly cleaning supplies, reusable packaging, and more to help users make greener choices and reduce their environmental impact. In this article, we'll explore its features and user interface.
 
-## Initial Design
+## App Preview
 
-![image__2_-removebg-preview](https://github.com/Ne14k/GreenChoice/assets/95349960/10dfb919-3865-4055-a031-afd96b81673f)
-![image__3_-removebg-preview](https://github.com/Ne14k/GreenChoice/assets/95349960/d6ddfc72-a1ec-4e10-82cc-a8840720c10d)
+<img src="https://github.com/Ne14k/GreenChoice/assets/95349960/e8e850b5-ae3a-47b3-89a4-3c2ccbd8660e" width="400">
+<img src="https://github.com/Ne14k/GreenChoice/assets/95349960/d6d227ee-e85f-4f5a-9ab1-15a1160209af" width="400">
 
 ## Features
 
@@ -28,10 +28,6 @@
 - **Price Ranges:** Users can filter recommendations by price range, accommodating different budgets and ensuring accessibility to sustainable options.
 
 - **Wishlist:** The app offers a wishlist feature, allowing users to save their favorite sustainable products for future reference and consideration.
-
-## Beta App Preview
-
-![Screen_recording_20230928_004905](https://github.com/Ne14k/GreenChoice/assets/95349960/e674e34f-7282-49c1-a2e8-927c39ba8770)
 
 ## Contributing
 
